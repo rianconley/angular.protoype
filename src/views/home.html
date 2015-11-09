@@ -1,0 +1,114 @@
+<form>
+
+
+<div class="container">
+
+<main class="main">
+
+       <div class="row">
+        <div class="col-sm-4">
+         <div class="cell"><div class="caption">
+           <div class="dark-bg">Steve Stricker Wears</div>
+           <div class="dropdown" >
+	     <select  ng-model="formData.shoes[0]" ng-show="init" ng-options="shoe.name for shoe in collection[0]">
+	     </select>
+           </div>
+           <div class="shoename" ng-hide="init" >{{answers[0]}}</div>
+	</div>
+           <img src="http://placehold.it/350x350">
+         </div>
+       </div>
+        <div class="col-sm-4">
+         <div class="cell"><div class="caption">
+           <div class="dark-bg">Adam Scott Wears</div>
+           <div class="dropdown" >
+	     <select ng-model="formData.shoes[1]" ng-show="init" ng-options="shoe.name for shoe in collection[1]"></select>
+           </div>
+           <div class="shoename" ng-hide="init" >{{answers[1]}}</div>
+	</div>
+           <img src="http://placehold.it/350x350">
+        </div>
+       </div>
+        <div class="col-sm-4">
+         <div class="cell"><div class="caption">
+           <div class="dark-bg">Zach Johnson Wears</div>
+           <div class="dropdown">
+	     <select ng-model="formData.shoes[2]" ng-show="init" ng-options="shoe.name for shoe in collection[2]"></select>
+           </div>
+           <div class="shoename" ng-hide="init" >{{answers[2]}}</div>
+	</div>
+           <img src="http://placehold.it/350x350">
+       </div>
+      </div>
+     </div>
+       <div class="row">
+        <div class="col-sm-4">
+         <div class="cell"><div class="caption">
+           <div class="dark-bg">Lee Westwood Wears</div>
+           <div class="dropdown">
+	     <select ng-model="formData.shoes[3]" ng-show="init" ng-options="shoe.name for shoe in collection[3]"></select>
+           </div>
+           <div class="shoename" ng-hide="init" >{{answers[3]}}</div>
+        </div>
+           <img src="http://placehold.it/350x350">
+       </div>
+     </div>
+        <div class="col-sm-4">
+         <div class="cell"><div class="caption">
+           <div class="dark-bg">Graham Delet Wears</div>
+           <div class="dropdown">
+	     <select ng-model="formData.shoes[4]" ng-show="init" ng-options="shoe.name for shoe in collection[4]"></select>
+           </div>
+           <div class="shoename" ng-hide="init" >{{answers[4]}}</div>
+        </div>
+        <img src="http://placehold.it/350x350">
+       </div>
+      </div>
+        <div class="col-sm-4">
+         <div class="cell"><div class="caption">
+           <div class="dark-bg">Kevin Na Wears</div>
+           <div class="dropdown">
+	    <select ng-model="formData.shoes[5]" ng-show="init" ng-options="shoe.name for shoe in collection[5]"></select>
+           </div>
+           <div class="shoename" ng-hide="init" >{{answers[5]}}</div>
+         </div>
+           <img src="http://placehold.it/350x350">
+       </div>
+      </div>
+     </div>
+
+
+<div class="form">
+
+	<div class="form-group">
+		<div class="row">
+		<div class="col-sm-6"> <input type="text" ng-model="formData.email" class="form-control" name="Email"  value="email" ></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6"><input type="text" ng-model="formData.firstname" class="form-control" name="firstname"  value="first name"></div>
+			<div class="col-sm-6"><input type="text" ng-model="formData.lastname" class="form-control" name="lastname"  value="last name"></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6"><input type="text" ng-model="formData.address1" class="form-control" name="address"  value="address"></div>
+			<div class="col-sm-6"><input type="text" ng-model="formData.address2" class="form-control" name="address2"  value="address2"></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6"><input type="text" ng-model="formData.city" class="form-control" name="city"  value="city"></div>
+			<div class="col-sm-6"><input type="text" ng-model="formData.state" class="form-control" name="state"  value="state"></div>
+		</div>
+		<div class="row">
+		<div class="col-md-offset-4 col-md-2">
+		<input type="checkbox" id="check" ng-model="formData.agree">
+		<label for="check">Agree to Terms</label>
+		</div>
+		<div class=" col-md-2">
+		<button type="button" class="btn btn-primary" ng-click="submit()">Submit</button>
+	
+		</div>
+		<div class="row">
+	</div>
+</form>
+ 
+</div>
+
+</div>
